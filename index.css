@@ -27,10 +27,9 @@ body {
     background-color: hsl(0, 0%, 100%);
     justify-content: center;
     align-items: last baseline;
-    max-width: 100rem;
     padding: 30px;
     border-radius: 15px;
-   
+    max-width: 650px;
 
 }
 
