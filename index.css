@@ -26,16 +26,16 @@ body {
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
     justify-content: center;
-    align-items: last baseline;
-    padding: 30px;
+   align-items: baseline;
+    padding: 2rem;
     border-radius: 15px;
-    max-width: 650px;
+    max-width: 50vw;
 
 }
 
 img {
-    max-height: 800px;
-    max-width: 650px;
+    max-height: 800vh;
+    max-width: 50vw;
     border-radius: 10px;
 
 }
@@ -44,12 +44,12 @@ h1 {
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
-    margin-bottom: 7px;
-    margin-top: 30px;
+    margin-bottom: 1rem;
+    margin-top:2rem;
     font-size: 35px;
 }
 
-p {
+.recipes-description {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -65,15 +65,14 @@ p {
 .border-for-preparation-time-text {
     border: 1px solid hsl(330, 100%, 98%);
     background-color: hsl(330, 100%, 98%);
-    padding-bottom: 10px;
-    padding-top: 7px;
-    margin-top: 10px;
-    padding-left: 6px;
-    padding-right: 370px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
     border-radius: 10px;
     font-family: "Outfit", sans-serif;
     font-weight: 100;
     font-size: 16px;
+    width: 100%;
 
 }
 
@@ -90,7 +89,7 @@ span {
 }
 
 .border-for-preparation-time-text li {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -102,8 +101,8 @@ span {
     font-weight: 400;
     color: hsl(14, 45%, 36%);
     font-size: 28px;
-    margin-top: 26px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -115,11 +114,11 @@ span {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .recipe-ingredients-section li{
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .horizontal-line {
@@ -133,8 +132,8 @@ span {
     font-weight: 400;
     color: hsl(14, 45%, 36%);
     font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .recipe-instructions-section{
@@ -151,48 +150,63 @@ span {
 }
 
 .points-for-instructions{
-    padding-left: 10px;
+    padding-left:1rem;
 }
 
 .recipe-instructions-section li{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .recipe-nutrition-heading{
     font-family: "Young Serif", serif;
     font-weight: 400;
     color: hsl(14, 45%, 36%);
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .table-description{
     font-family: "Outfit", sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
+   
 }
 
 .rowspan-table{
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-size: 17px;   
+   
 }
 
 
 .rowspan-table tr td:nth-child(2) {
-    padding-left:250px;
-    padding-right: 250px;
+   text-align: right;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     color: hsl(14, 45%, 36%);
+    width: 100%;
+   
 }
 
 .bordered {
-    border-bottom: 1px solid hsl(30, 18%, 87%);
-    padding-bottom: 10px;
-    padding-top: 10px;
+    
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
 }
 
 .unbordered{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bordered::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 46vw; /* Full width of the viewport */
+    height: 1px;
+    background-color: hsl(30, 18%, 87%); /* Border color */
+   /* Adjust according to the container's padding */
 }
